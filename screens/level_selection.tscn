@@ -1,0 +1,249 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://textures/arrow_right.png" type="Texture" id=1]
+[ext_resource path="res://textures/arrow_left.png" type="Texture" id=2]
+[ext_resource path="res://screens/level_selection.gd" type="Script" id=3]
+[ext_resource path="res://levels/_thumbs/action_kugel.png" type="Texture" id=4]
+[ext_resource path="res://levels/_thumbs/race_1.png" type="Texture" id=5]
+[ext_resource path="res://levels/_thumbs/first_created_4.png" type="Texture" id=6]
+[ext_resource path="res://levels/_thumbs/moms_stage_1.png" type="Texture" id=7]
+[ext_resource path="res://assets/fonts/ttf/Chewy.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://assets/fonts/chewy_font_small.tres" type="DynamicFont" id=9]
+[ext_resource path="res://assets/fonts/chewy_font_small_green_and_outlines.tres" type="DynamicFont" id=10]
+[ext_resource path="res://assets/environments/blue_sunset.tres" type="Environment" id=11]
+[ext_resource path="res://assets/sound_fx/pick_up_2.ogg" type="AudioStream" id=12]
+[ext_resource path="res://assets/sound_fx/pick_up_3.ogg" type="AudioStream" id=13]
+[ext_resource path="res://levels/_thumbs/pac-kugel.png" type="Texture" id=14]
+
+[sub_resource type="DynamicFont" id=7]
+size = 180
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 50
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="Theme" id=9]
+Fonts/fonts/large = SubResource( 7 )
+Fonts/fonts/normal = SubResource( 8 )
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 6 )
+roughness = 0.8
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 4 )
+roughness = 0.8
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 7 )
+roughness = 0.8
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_texture = ExtResource( 5 )
+roughness = 0.8
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_texture = ExtResource( 14 )
+roughness = 0.8
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="Animation" id=10]
+resource_name = "push_back"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("LevelSelect1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 10, 10, 10 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LevelSelect2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 10, 10, 10 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LevelSelect3:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 10, 10, 10 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LevelSelect4:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 10, 10, 10 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LevelSelect5:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 10, 10, 9.99999 ), Vector3( 0, 0, 0 ) ]
+}
+
+[node name="LevelSelection" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 9 )
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -670.0
+margin_top = -424.0
+margin_right = 711.0
+margin_bottom = 384.0
+color = Color( 0.835294, 1, 0.423529, 0 )
+
+[node name="lblLevelName" type="Label" parent="Control"]
+anchor_right = 1.0
+margin_bottom = 96.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_as_outline = 13
+custom_fonts/font = ExtResource( 10 )
+text = "level_name"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="cl" type="CenterContainer" parent="Control"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+
+[node name="Left" type="TouchScreenButton" parent="Control/cl"]
+position = Vector2( 0, -100 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+action = "ui_left"
+
+[node name="cr" type="CenterContainer" parent="Control"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+
+[node name="Right" type="TouchScreenButton" parent="Control/cr"]
+position = Vector2( -250, -100 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 1 )
+action = "ui_right"
+
+[node name="btnSelect" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -238.0
+margin_top = -153.0
+margin_right = 235.0
+margin_bottom = -40.0
+custom_fonts/font = ExtResource( 9 )
+text = "select level"
+
+[node name="LevelSelect1" type="MeshInstance" parent="."]
+transform = Transform( 9.53096, 1.03519, 2.84416, 0, 9.39693, -3.4202, -3.02669, 3.25978, 8.95617, -32.0397, 0, -35 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 3 )
+
+[node name="LevelSelect2" type="MeshInstance" parent="."]
+transform = Transform( 5.56296, -2.84213, -7.8087, 7.71976, 5.24538, 3.59044, 3.0755, -8.02548, 5.11204, 4.31475, 0, -35 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 4 )
+
+[node name="LevelSelect3" type="MeshInstance" parent="."]
+transform = Transform( 5.03699, 2.95464, 8.11781, 0, 9.39693, -3.4202, -8.63879, 1.72275, 4.73322, 42.9249, 0, -35 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 5 )
+
+[node name="LevelSelect4" type="MeshInstance" parent="."]
+transform = Transform( 7.83368, -2.12585, -5.84073, 0, 9.39693, -3.4202, 6.21558, 2.67928, 7.36125, 84.3208, 0, -35 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 6 )
+
+[node name="LevelSelect5" type="MeshInstance" parent="."]
+transform = Transform( 7.83368, -2.12585, -5.84073, 1.96256, 9.76219, -0.92093, 5.89761, -0.42485, 8.06459, 132.722, 0, -35 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 13 )
+
+[node name="Camera" type="InterpolatedCamera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.02847 )
+enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/push_back = SubResource( 10 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 11 )
+
+[node name="SoundSelect" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )
+bus = "Sound"
+
+[node name="SoundChangeSelection" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 12 )
+bus = "Sound"
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.954735, -0.205974, 0.214607, 0, 0.72147, 0.692446, -0.297458, -0.661102, 0.688813, 0, 55.3001, 0 )
+light_energy = 1.485
+shadow_enabled = true
+directional_shadow_mode = 0
+
+[connection signal="gui_input" from="Control/ColorRect" to="." method="_on_ColorRect_gui_input"]
+[connection signal="pressed" from="Control/btnSelect" to="." method="_on_btnSelect_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

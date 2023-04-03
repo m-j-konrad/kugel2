@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://actors/enemy/mat_enemy.tres" type="Material" id=1]
+[ext_resource path="res://actors/enemy/enemy.gd" type="Script" id=2]
+
+[sub_resource type="SphereShape" id=29]
+radius = 1.51299
+
+[sub_resource type="CubeMesh" id=28]
+
+[node name="EnemyNonCollide" type="KinematicBody" groups=["enemies"]]
+pause_mode = 1
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0 )
+collision_layer = 2
+collision_mask = 4
+collision/safe_margin = 0.01
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.832987, -0.182784, 0.522229, 0.534516, 0.509646, -0.674206, -0.142918, 0.840744, 0.522229, -1.49514e-08, 0.81762, 0.171024 )
+shape = SubResource( 29 )
+
+[node name="Mesh" type="MeshInstance" parent="CollisionShape"]
+transform = Transform( 1, 0, -7.45058e-09, 1.49012e-08, 1, 0, -5.96046e-08, -2.98023e-08, 1, 0, 0, 0 )
+mesh = SubResource( 28 )
+skeleton = NodePath("../../..")
+material/0 = ExtResource( 1 )
+
+[node name="SpeedTimer" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="DebugLabel" type="Label3D" parent="."]
+visible = false
+pixel_size = 0.05
+offset = Vector2( 0, 25 )
+text = "DEBUG:"
+
+[connection signal="timeout" from="SpeedTimer" to="." method="_on_SpeedTimer_timeout"]

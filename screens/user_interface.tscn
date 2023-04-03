@@ -1,0 +1,117 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/fonts/console_font_medium.tres" type="DynamicFont" id=1]
+[ext_resource path="res://screens/user_interface.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/chewy_font_small.tres" type="DynamicFont" id=3]
+[ext_resource path="res://screens/settings.tscn" type="PackedScene" id=4]
+[ext_resource path="res://textures/icopause.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/fonts/ttf/Chewy.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+outline_size = 2
+outline_color = Color( 0.12549, 1, 0, 1 )
+use_filter = true
+font_data = SubResource( 1 )
+
+[node name="UserInterface" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="lblScore" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -700.0
+margin_top = 20.0
+margin_right = -313.0
+margin_bottom = 124.0
+custom_colors/font_color = Color( 0, 0, 0, 0.596078 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="lblScore2" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -326.0
+margin_top = 20.0
+margin_right = -43.0
+margin_bottom = 124.0
+custom_colors/font_color = Color( 0, 0, 0, 0.596078 )
+custom_fonts/font = SubResource( 2 )
+text = "Score"
+align = 2
+
+[node name="lblDebug" type="Label" parent="."]
+visible = false
+anchor_bottom = 1.0
+margin_right = 1100.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -2
+custom_constants/shadow_offset_y = 2
+custom_constants/shadow_as_outline = 2
+custom_fonts/font = ExtResource( 1 )
+text = "DEBUG-LABEL"
+valign = 2
+
+[node name="btnPause" type="TouchScreenButton" parent="."]
+position = Vector2( 20, 20 )
+scale = Vector2( 0.633094, 0.602151 )
+normal = ExtResource( 5 )
+action = "ui_cancel"
+
+[node name="PauseMenu" type="ColorRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0.592157 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0.223529, 1 )
+
+[node name="btnGoOn" type="Button" parent="PauseMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -550.0
+margin_top = -308.0
+margin_right = 450.0
+margin_bottom = -158.0
+rect_min_size = Vector2( 0, 150 )
+custom_fonts/font = ExtResource( 3 )
+text = "go_on"
+
+[node name="btnSettings" type="Button" parent="PauseMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -550.0
+margin_top = -87.0
+margin_right = 450.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 0, 150 )
+custom_fonts/font = ExtResource( 3 )
+text = "Settings"
+
+[node name="btnQuit" type="Button" parent="PauseMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -550.0
+margin_top = 256.0
+margin_right = 450.0
+margin_bottom = 406.0
+rect_min_size = Vector2( 0, 150 )
+custom_fonts/font = ExtResource( 3 )
+text = "Quit"
+
+[node name="Settings" parent="PauseMenu" instance=ExtResource( 4 )]
+visible = false
+
+[connection signal="pressed" from="PauseMenu/btnGoOn" to="." method="_on_btnGoOn_pressed"]
+[connection signal="pressed" from="PauseMenu/btnSettings" to="." method="_on_btnSettings_pressed"]
+[connection signal="pressed" from="PauseMenu/btnQuit" to="." method="_on_btnQuit_pressed"]

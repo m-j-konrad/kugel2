@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pixabay_heart-beat-of-a-dream.mp3-e7669f802f0e8ca674a4c565927102c4.mp3str"
+
+[deps]
+
+source_file="res://assets/sound_music/pixabay_heart-beat-of-a-dream.mp3"
+dest_files=[ "res://.import/pixabay_heart-beat-of-a-dream.mp3-e7669f802f0e8ca674a4c565927102c4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

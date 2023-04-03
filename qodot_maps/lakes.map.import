@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/lakes.map-9fb7c56fafc1664037b765d07a1d8e7d.tres"
+
+[deps]
+
+source_file="res://qodot_maps/lakes.map"
+dest_files=[ "res://.import/lakes.map-9fb7c56fafc1664037b765d07a1d8e7d.tres" ]
+
+[params]
+

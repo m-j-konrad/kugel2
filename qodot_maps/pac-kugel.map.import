@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/pac-kugel.map-fb8a3c760a36cd15f10ee2b96b83c478.tres"
+
+[deps]
+
+source_file="res://qodot_maps/pac-kugel.map"
+dest_files=[ "res://.import/pac-kugel.map-fb8a3c760a36cd15f10ee2b96b83c478.tres" ]
+
+[params]
+

@@ -1,0 +1,16 @@
+[gd_resource type="SpatialMaterial" format=2]
+
+[resource]
+params_point_size = 0.1
+albedo_color = Color( 0.196078, 1, 0, 1 )
+metallic_texture_channel = 4
+roughness = 0.36
+emission_enabled = true
+emission = Color( 0.384314, 1, 0, 1 )
+emission_energy = 2.0
+emission_operator = 1
+emission_on_uv2 = false
+normal_enabled = true
+normal_scale = 1.0
+anisotropy_enabled = true
+anisotropy = 0.0

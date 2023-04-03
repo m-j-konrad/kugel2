@@ -1,0 +1,13 @@
+# Godot-specific ignores
+.import/
+*.translation
+Screenshots/
+#export_presets.cfg <- set to ignore when public!
+
+# don't push binaries
+bin/
+
+# System/tool-specific ignores
+.directory
+*~
+

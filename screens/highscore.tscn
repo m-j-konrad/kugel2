@@ -1,0 +1,122 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/fonts/chewy_font_small.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/fonts/chewy_font_big.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/fonts/console_font_medium.tres" type="DynamicFont" id=3]
+[ext_resource path="res://src/network.tscn" type="PackedScene" id=4]
+[ext_resource path="res://screens/check_internet_connection.tscn" type="PackedScene" id=5]
+[ext_resource path="res://screens/highscore.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/fonts/ttf/Chewy.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 61
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = SubResource( 1 )
+
+[sub_resource type="InputEventAction" id=3]
+action = "ui_accept"
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 3 )
+
+[node name="Highscore" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+
+[node name="rectBackgroundHighscore" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0.0196078, 0.25098, 1 )
+
+[node name="lblTitle" type="Label" parent="."]
+anchor_right = 1.0
+margin_bottom = 242.0
+custom_colors/font_color = Color( 0.196078, 1, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Highscore_lblTitle"
+align = 1
+valign = 1
+
+[node name="lblTitle2" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -1917.0
+margin_top = 25.0
+margin_right = -25.0
+margin_bottom = 505.0
+custom_colors/font_color = Color( 0.196078, 1, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Level-name
+( may take a few seconds to update )"
+align = 2
+valign = 1
+
+[node name="txtHighscoreTable" type="TextEdit" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -668.0
+margin_top = -196.0
+margin_right = 669.0
+margin_bottom = 347.0
+custom_colors/font_color = Color( 0.937255, 0.937255, 0.937255, 1 )
+custom_colors/background_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 3 )
+text = "1
+2
+3
+4
+5
+6
+7
+8
+9
+0"
+readonly = true
+context_menu_enabled = false
+shortcut_keys_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="btnQuit" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+margin_top = -140.0
+margin_right = 680.0
+margin_bottom = -30.0
+custom_fonts/font = ExtResource( 1 )
+text = "Highscore_btnQuit"
+
+[node name="btnRestart" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -652.0
+margin_top = -140.0
+margin_right = -172.0
+margin_bottom = -30.0
+custom_fonts/font = ExtResource( 1 )
+shortcut = SubResource( 4 )
+text = "Highscore_btnRestart"
+
+[node name="CheckInternetConnection" parent="." instance=ExtResource( 5 )]
+
+[node name="Network" parent="." instance=ExtResource( 4 )]
+
+[node name="NetRetryTimer" type="Timer" parent="."]
+
+[connection signal="pressed" from="btnQuit" to="." method="_on_btnQuit_pressed"]
+[connection signal="pressed" from="btnRestart" to="." method="_on_btnRestart_pressed"]
+[connection signal="done" from="CheckInternetConnection" to="." method="_on_CheckInternetConnection_done"]
+[connection signal="timeout" from="NetRetryTimer" to="." method="_on_NetRetryTimer_timeout"]

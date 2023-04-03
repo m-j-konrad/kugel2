@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/falling.ogg-c280968ea22873037cad0a9879eb1d4c.oggstr"
+
+[deps]
+
+source_file="res://assets/sound_fx/falling.ogg"
+dest_files=[ "res://.import/falling.ogg-c280968ea22873037cad0a9879eb1d4c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

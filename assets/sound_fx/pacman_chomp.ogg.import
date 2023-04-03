@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pacman_chomp.ogg-c5d52b6e3cb0768458180e6f08910297.oggstr"
+
+[deps]
+
+source_file="res://assets/sound_fx/pacman_chomp.ogg"
+dest_files=[ "res://.import/pacman_chomp.ogg-c5d52b6e3cb0768458180e6f08910297.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

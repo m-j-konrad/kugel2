@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Darren_Curtis-lurking_evil.mp3-43993d77ae006be6db06289cd7e15022.mp3str"
+
+[deps]
+
+source_file="res://assets/sound_music/Darren_Curtis-lurking_evil.mp3"
+dest_files=[ "res://.import/Darren_Curtis-lurking_evil.mp3-43993d77ae006be6db06289cd7e15022.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

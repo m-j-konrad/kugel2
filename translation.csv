@@ -1,0 +1,49 @@
+,en,de,fr,es
+DISCLAMER_BETA,"Copyright © 2023 by Marcel J. Konrad     marcel@mjksoftware.de\nThis is an unfinished beta version for testing and expressly not intended for publication. Use is at your own risk and without any guarantee. This app saves the internal unique username. The connected server stores connection data (IP address, connection time and the internal unique username). No animals were tortured during the creation of this software; only a few people were annoyed. However, health-threatening amounts of coffee were consumed.","© 2023 Marcel J. Konrad     marcel@mjksoftware.de\nDies ist eine unfertige Beta-Version zum Testen und ausdrücklich nicht zur Veröffentlichung bestimmt. Die Benutzung erfolgt auf eigene Gefahr und ohne jegliche Gewährleistung. Diese App speichert den internen eindeutigen Benutzernamen. Der verbundene Server speichert Verbindungsdaten (IP-Adresse, Verbindungszeit und den internen eindeutigen Benutzernamen). Während der Erstellung dieser Software wurden keine Tiere gequält; nur ein paar Menschen waren genervt. Allerdings wurden gesundheitlich bedenkliche Mengen Kaffee konsumiert.","Copyright © 2023 par Marcel J. Konrad marcel@mjksoftware.de\nIl s'agit d'une version bêta inachevée à des fins de test et expressément non destinée à la publication. L'utilisation est à vos propres risques et sans aucune garantie. Cette application enregistre le nom d'utilisateur unique interne. Le serveur connecté stocke les données de connexion (adresse IP, heure de connexion et nom d'utilisateur unique interne). Aucun animal n'a été torturé lors de la création de ce logiciel ; seules quelques personnes étaient agacées. Cependant, des quantités de café dangereuses pour la santé ont été consommées.","Copyright © 2023 por Marcel J. Konrad marcel@mjksoftware.de\nEsta es una versión beta inacabada para pruebas y expresamente no destinada a su publicación. El uso es bajo su propio riesgo y sin ninguna garantía. Esta aplicación guarda el nombre de usuario único interno. El servidor conectado almacena datos de conexión (dirección IP, tiempo de conexión y el nombre de usuario único interno). Ningún animal fue torturado durante la creación de este software; sólo unas pocas personas estaban molestas. Sin embargo, se consumieron cantidades de café peligrosas para la salud."
+FirstRunScreen_lblWelcome,Welcome to »Kugel 2« !\nYou're running this game for the first time.\nPlease enter your name at the top to create an account\nto be able to compare your highscore with other players  :-),"Willkommen bei »Kugel 2« !\nDies ist der erste Start.\nBitte gib oben deinen Namen ein\num einen Benutzer zu erstellen,\ndamit deine Punkte gespeichert werden können  :-)",Bienvenue à »Kugel 2« !\nVous lancez ce jeu pour la première fois.\nVeuillez entrer votre nom en haut pour créer un compte\npour pouvoir comparer votre meilleur score avec d'autres joueurs :-),¡Bienvenido a »Kugel 2«!\nEstás ejecutando este juego por primera vez.\nIngresa tu nombre en la parte superior para crear una cuenta\npara poder comparar tu puntuación más alta con la de otros jugadores :-)
+FirstRunScreen_Okay,I did it !,fertig !,complet !,completo !
+Highscore_lblTitle,the Highscore Table so far,die Besten bis jetzt,Le meilleur jusqu'ici,Lo mejor por mucho
+Highscore_lblTitle2,( may take a few seconds to update ),( Aktualisierung kann einen Moment dauern ),(la mise à jour peut prendre quelques secondes),(la actualización puede tardar unos segundos)
+Highscore_btnQuit,quit  :-(,beenden  :-(,arrêter :-(,parar :-(
+Highscore_btnRestart,once again  :-),nochmal  :-),encore une fois :-),una vez más :-)
+no_highscore_available,"the highscore isn't available,\ncan't load it from the internet :-(",Die Highscoretabelle kann nicht geladen werden.\nEs ist keine Internetverbindung vorhanden :-(,"le meilleur score n'est pas disponible,\nimpossible de le charger depuis Internet :-(","puntaje alto no disponible, no se puede cargar desde internet :-("
+LevelSelection_btnSelect,play level,Level spielen,jouer,jugar
+Level1,the  first  level  I  created  for  Kugel 2 !,mein  erstes  Level  für  Kugel 2 !,le premier niveau que j'ai créé pour Kugel 2 !,el primer nivel que creé para Kugel 2!
+Level2,Mom's Stage destructed,Mom's Stage: durchlöchert,Mom's Stage ][,Mom's Stage ][
+Level3,Mom's Stage  ( remake  of  old  »Kugel 1« ),Mamas Level  ( aus  »Kugel 1« ),Mom's Stage (remake de l'ancien »Kugel 1«),Mom's Stage (remake del viejo »Kugel 1«)
+Level4,TURAS,TURAS,TURAS,TURAS
+Level5,This  will  be  fun  -  when  it is  done !   :-),(noch nicht fertig),Ce sera amusant - quand ce sera fait ! :-),sin completar
+Score,points,Punkte,score,puntaje
+Attention,Attention!,Achtung!,Danger!,¡Peligro!
+no_network,"There's no network connection available.\nYou won't see the highscores,\nbut yours will be uploaded next time you're online.","Internetverbindung nicht erkannt!\nDu wirst die Bestenliste nicht sehen können,\naber deine Punkte werden hochgeladen,\nwenn du nächstes mal online bist.","Aucune connexion réseau n'est disponible.\nVous ne verrez pas les meilleurs scores,\nmais votre score sera téléchargé la prochaine fois que vous serez en ligne.","No hay conexión de red disponible.\nNo verás las puntuaciones más altas,\npero tu puntuación se cargará la próxima vez que estés en línea."
+network_ok,found the internet out there  :-),das Internet wurde gefunden!,l'internet a été trouvé!,¡Internet fue encontrado!
+CheckInternetConnection_lblTitle,checking internet connection …,Suche das Internet …,Chercher sur Internet...,Busca en internet...
+TryAgain,try again,nochmal versuchen,essayer à nouveau,intentar otra vez
+JustPractise,go on offline,offline spielen,jouer déconnecté,jugar fuera de línea
+Settings,settings,Einstellungen,paramètres,ajustes
+Start_Game,play !,spielen !,jouer !,jugar !
+Quit,quit  :-(,beenden  :-(,fin :-(,fin :-(
+Settings_DisplayName,user name,angezeigter Name,Nom affiché,Nombre mostrado
+Settings_LowGraphics,less graphic effects,weniger Grafikeffekte,moins d'effets graphiques,menos efectos gráficos
+Settings_HighGraphics,all graphic effects,alle Grafikeffekte,tous les effets graphiques,todos los efectos gráficos
+Settings_Graphics,graphics,Grafik,graphique,gráficos
+Settings_VolumeMaster,master volume,Gesamtlautstärke,volume principal,volumen principal
+Settings_VolumeMusic,music volume,Musiklautstärke,volume de la musique,Volumen de la música
+Settings_VolumeSound,sound volume,Soundlautstärke,volume sonore,volumen de sonido
+Settings_ShowHints,useful hints,nützliche Hinweise,conseils utiles,consejos útiles
+Settings_Show,show,anzeigen,montrer,espectáculo
+Settings_Hide,hide,nicht anzeigen,cacher,esconder
+Settings_Language,language,Sprache,Langue,Idioma
+OK,Okay,Okay,D'accord,Bueno
+CANCEL,Cancel,Abbrechen,Annuler,Cancelar
+go_on,go on playing,weiterspielen,continue à jouer,sigue jugando
+Hint1,move with mobile sensor\ncatch the green ball\navoid the cubes\ndon't fall\nget points,Bewegen mit Handysensor\ngrüne Kugel einsammeln\nWürfel vermeiden\nnicht herunterfallen\nPunkte sammeln,déplacez-vous avec le capteur mobile\attrapez la balle verte\évitez les anguleux\ne tombez pas\nobtenez des points,muévete con el sensor del móvil\atrapa la bola verde\evita los angulares\no te caigas\nconsigue puntos
+Hint2,move with mobile sensor\ncatch the green ball\navoid the cubes\ndon't fall\nget points,Bewegen mit Handysensor\ngrüne Kugel einsammeln\nlila Würfel vermeiden\nnicht herunterfallen\nPunkte sammeln,déplacez-vous avec le capteur mobile\attrapez la balle verte\évitez les anguleux\ne tombez pas\nobtenez des points,muévete con el sensor del móvil\atrapa la bola verde\evita los angulares\no te caigas\nconsigue puntos
+Hint3,move with mobile sensor\ncatch the green ball\navoid the red cubes\nget points,Bewegen mit Handysensor\ngrüne Kugel einsammeln\nWürfel vermeiden\nPunkte sammeln\nNicht mehr Punkte als Karin sammeln ,déplacez-vous avec le capteur mobile\attrapez la balle verte\évitez les anguleux\ne tombez pas\nobtenez des points,déplacez-vous avec le capteur mobile\nattrapez la balle verte\névitez les rouges\nobtenez des points
+Hint4,move with mobile sensor\ncatch the green ball\navoid the cubes\ndon't fall\nget points,Bewegen mit Handysensor\ngrüne Kugel einsammeln\nWürfel vermeiden\nnicht herunterfallen\nPunkte sammeln,déplacez-vous avec le capteur mobile\attrapez la balle verte\évitez les anguleux\ne tombez pas\nobtenez des points,muévete con el sensor del móvil\atrapa la bola verde\evita los angulares\no te caigas\nconsigue puntos
+Hint5,this level doesn't exist yet!,Dieses Level existiert noch nicht!,ce niveau n'existe pas encore !,¡Este nivel aún no existe!
+yes,yes,ja,oui,Sí
+no,no,nein,no,No
+update_available,There is a newer version available.\nDo you want to download it?,Es ist eine neuere Version verfügbar.\nMöchten Sie sie herunterladen?,Une version plus récente est disponible.\nVoulez-vous la télécharger ?,Hay una versión más nueva disponible.\n¿Quieres descargarla?
+search_update,Searching for updates…,Such nach updates….,Vérification des mises à jour…,Comprobando actualizaciones...
+loading_update,Downloading update file…\nplease wait.,Update wird heruntergeladen...\nBitte warten.,Téléchargement du fichier de mise à jour…\nveuillez patienter.,Descargando archivo de actualización...\npor favor espere.

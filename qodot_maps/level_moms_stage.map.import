@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/level_moms_stage.map-ac095875281fe724af4b29d74e48c95b.tres"
+
+[deps]
+
+source_file="res://qodot_maps/level_moms_stage.map"
+dest_files=[ "res://.import/level_moms_stage.map-ac095875281fe724af4b29d74e48c95b.tres" ]
+
+[params]
+

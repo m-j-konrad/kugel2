@@ -1,0 +1,11 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://textures/rock.png" type="Texture" id=1]
+
+[resource]
+albedo_texture = ExtResource( 1 )
+metallic = 0.88
+metallic_specular = 0.16
+roughness = 0.62
+normal_enabled = true
+normal_scale = 0.18

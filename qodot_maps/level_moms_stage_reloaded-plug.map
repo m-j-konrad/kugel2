@@ -1,0 +1,21 @@
+// Game: Kugel 2
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_mod" "textures"
+"_tb_textures" "textures"
+// brush 0
+{
+( -32 -16 32 ) ( -32 16 -48 ) ( -32 16 32 ) invisible_block 0 0 0 1 1
+( -16 -32 32 ) ( -32 -16 -48 ) ( -32 -16 32 ) invisible_block 0 0 0 1 1
+( -16 32 32 ) ( -32 16 -48 ) ( -16 32 -48 ) invisible_block 0 0 0 1 1
+( 16 -32 32 ) ( -16 -32 -48 ) ( -16 -32 32 ) invisible_block 0 0 0 1 1
+( 32 16 -48 ) ( 16 -32 -48 ) ( 32 -16 -48 ) invisible_block 0 0 0 1 1
+( 32 16 32 ) ( -16 32 32 ) ( 16 32 32 ) invisible_block 0 0 0 1 1
+( 16 32 32 ) ( -16 32 -48 ) ( 16 32 -48 ) invisible_block 0 0 0 1 1
+( 32 -16 32 ) ( 16 -32 -48 ) ( 16 -32 32 ) invisible_block 0 0 0 1 1
+( 16 32 -48 ) ( 32 16 32 ) ( 16 32 32 ) invisible_block 0 0 0 1 1
+( 32 16 32 ) ( 32 -16 -48 ) ( 32 -16 32 ) invisible_block 0 0 0 1 1
+}
+}

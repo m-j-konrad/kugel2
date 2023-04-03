@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://actors/funny_cube/funny_cube.gd" type="Script" id=1]
+[ext_resource path="res://textures/rock.tres" type="Material" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="BoxShape" id=3]
+
+[node name="FunnyCube" type="KinematicBody"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="Pivot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Pivot"]
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+shape = SubResource( 3 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="tween_step" from="Tween" to="." method="_on_Tween_tween_step"]

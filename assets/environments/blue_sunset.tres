@@ -1,0 +1,21 @@
+[gd_resource type="Environment" load_steps=3 format=2]
+
+[ext_resource path="res://assets/environments/Epic_BlueSunset_EquiRect_flat.png" type="Texture" id=1]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 1 )
+
+[resource]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_color = Color( 0.0196078, 0.027451, 0.129412, 1 )
+background_energy = 1.55
+ambient_light_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+tonemap_mode = 2
+auto_exposure_scale = 0.2
+ss_reflections_max_steps = 128
+ss_reflections_fade_in = 0.14489
+ss_reflections_fade_out = 5.27803
+ss_reflections_depth_tolerance = 2.0
+ss_reflections_roughness = false
+glow_intensity = 8.0
